@@ -22,7 +22,7 @@
     <div class="main-wrapper">
         <div class="header">
 			<div class="header-left">
-				<a href="index-2.html" class="logo">
+				<a href="index.html" class="logo">
 					<img src="assets/img/logo.png" width="35" height="35" alt="">
 				</a>
 			</div>
@@ -133,39 +133,35 @@
                 <div class="sidebar-menu">
                     <ul>
                         <li>
-                            <a href="index-2.html"><i class="fa fa-home back-icon"></i> <span>Back to Home</span></a>
+                            <a href="index.html"><i class="fa fa-home back-icon"></i> <span>Inicio</span></a>
                         </li>
-                        <li class="menu-title">Settings</li>
-                        <li>
-                            <a href="settings.html"><i class="fa fa-building"></i> <span>Company Settings</span></a>
-                        </li>
+                        <li class="menu-title">Gestion de Usuario</li>
                         <li class="active">
-                            <a href="localization.html"><i class="fa fa-clock-o"></i> <span>Localization</span></a>
+                            <a href="configuracion.html"><i class="fa fa-building"></i> <span>Contacto</span></a>
                         </li>
                         <li>
-                            <a href="theme-settings.html"><i class="fa fa-picture-o"></i> <span>Theme Settings</span></a>
+                            <a href="localization.html"><i class="fa fa-clock-o"></i> <span>Localización</span></a>
                         </li>
                         <li>
-                            <a href="roles-permissions.html"><i class="fa fa-key"></i> <span>Roles & Permissions</span></a>
+                            <a href="personalizar.html"><i class="fa fa-picture-o"></i> <span>Personalizar</span></a>
                         </li>
                         <li>
-                            <a href="email-settings.html"><i class="fa fa-envelope-o"></i> <span>Email Settings</span></a>
+                            <a href="roles.html"><i class="fa fa-key"></i> <span>Roles y Permisos</span></a>
                         </li>
                         <li>
-                            <a href="invoice-settings.html"><i class="fa fa-pencil-square-o"></i> <span>Invoice Settings</span></a>
+                            <a href="correo.html"><i class="fa fa-envelope-o"></i> <span>Correo</span></a>
                         </li>
                         <li>
-                            <a href="salary-settings.html"><i class="fa fa-money"></i> <span>Salary Settings</span></a>
+                            <a href="factura.html"><i class="fa fa-pencil-square-o"></i> <span>Configuración Factura</span></a>
                         </li>
                         <li>
-                            <a href="notifications-settings.html"><i class="fa fa-globe"></i> <span>Notifications</span></a>
+                            <a href="configSalario.html"><i class="fa fa-money"></i> <span> Ajuste de Porcentajes </span></a>
                         </li>
+                        
                         <li>
-                            <a href="change-password.html"><i class="fa fa-lock"></i> <span>Change Password</span></a>
+                            <a href="cambiarContraseña.html"><i class="fa fa-lock"></i> <span>Cambio de Contraseña</span></a>
                         </li>
-                        <li>
-                            <a href="leave-type.html"><i class="fa fa-cogs"></i> <span>Leave Type</span></a>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -175,20 +171,25 @@
                 <div class="row">
                     <div class="col-lg-8 offset-lg-2">
                         <form>
-                            <h3 class="page-title">Basic Settings</h3>
+                            <h3 class="page-title">Configuracion Basica</h3>
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Default Country</label>
+                                        <label>Pais</label>
                                         <select class="select">
                                             <option selected="selected">USA</option>
                                             <option>United Kingdom</option>
+                                            <option>Venezuela</option>
+                                            <option>Chile</option>
+                                            <option>Colombia</option>
+                                            <option>Peru</option>
+                                            <option>Argentina</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Date Format</label>
+                                        <label>Formato de Fecha</label>
                                         <select class="select">
                                             <option value="d/m/Y">15/05/2016</option>
                                             <option value="d.m.Y">15.05.2016</option>
@@ -203,24 +204,28 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Timezone</label>
+                                        <label>Zona Horaria</label>
                                         <select class="select">
                                             <option>(UTC +5:30) Antarctica/Palmer</option>
+                                            <option>(UTC +10:30) Australia</option>
+                                            <option>(UTC +6) Asia</option>
+                                            <option>(	UTC -4) America del Sur</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Default Language</label>
+                                        <label>Lenguaje default</label>
                                         <select class="select">
                                             <option>English</option>
-                                            <option selected="selected">French</option>
+                                            <option selected="selected">Español</option>
+                                            <option >François</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Currency Code</label>
+                                        <label>Codigo de pago</label>
                                         <select class="select">
                                             <option selected="selected">USD</option>
                                             <option>Pound</option>
@@ -231,12 +236,12 @@
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="form-group">
-                                        <label>Currency Symbol</label>
+                                        <label>Moneda de pago</label>
                                         <input class="form-control" readonly value="$" type="text">
                                     </div>
                                 </div>
 								<div class="col-sm-12 text-center m-t-20">
-									<button type="button" class="btn btn-primary submit-btn">Save</button>
+									<button type="button" class="btn btn-primary submit-btn">Guardar</button>
 								</div>
                             </div>
                         </form>

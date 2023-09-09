@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- leaves23:22-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <title>Preclinic - Medical & Hospital - Bootstrap 4 Admin Template</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dentadura.css">
+    <link rel="stylesheet" href="assets/css/odontograma.css">
+    
+    <!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <div class="header">
+			<div class="header-left">
+				<a href="index-2.html" class="logo">
+					<img src="assets/img/logo.png" width="35" height="35" alt=""> <span>Preclinic</span>
+				</a>
+			</div>
+			<a id="toggle_btn" href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+            <a id="mobile_btn" class="mobile_btn float-left" href="#sidebar"><i class="fa fa-bars"></i></a>
+            <ul class="nav user-menu float-right">
+                <li class="nav-item dropdown d-none d-sm-block">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown"><i class="fa fa-bell-o"></i> <span class="badge badge-pill bg-danger float-right">3</span></a>
+                    <div class="dropdown-menu notifications">
+                        <div class="topnav-dropdown-header">
+                            <span>Notifications</span>
+                        </div>
+                        <div class="drop-scroll">
+                            <ul class="notification-list">
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">
+												<img alt="John Doe" src="assets/img/user.jpg" class="img-fluid">
+											</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
+												<p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">V</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
+												<p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">L</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
+												<p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">G</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
+												<p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="notification-message">
+                                    <a href="activities.html">
+                                        <div class="media">
+											<span class="avatar">V</span>
+											<div class="media-body">
+												<p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
+												<p class="noti-time"><span class="notification-time">2 days ago</span></p>
+											</div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="topnav-dropdown-footer">
+                            <a href="activities.html">View all Notifications</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown d-none d-sm-block">
+                    <a href="javascript:void(0);" id="open_msg_box" class="hasnotifications nav-link"><i class="fa fa-comment-o"></i> <span class="badge badge-pill bg-danger float-right">8</span></a>
+                </li>
+                <li class="nav-item dropdown has-arrow">
+                    <a href="#" class="dropdown-toggle nav-link user-link" data-toggle="dropdown">
+                        <span class="user-img"><img class="rounded-circle" src="assets/img/user.jpg" width="40" alt="Admin">
+							<span class="status online"></span></span>
+                        <span>Admin</span>
+                    </a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="profile.html">My Profile</a>
+						<a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+						<a class="dropdown-item" href="settings.html">Settings</a>
+						<a class="dropdown-item" href="login.html">Logout</a>
+					</div>
+                </li>
+            </ul>
+            <div class="dropdown mobile-user-menu float-right">
+                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="profile.html">My Profile</a>
+                    <a class="dropdown-item" href="edit-profile.html">Edit Profile</a>
+                    <a class="dropdown-item" href="settings.html">Settings</a>
+                    <a class="dropdown-item" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-inner slimscroll">
+                <div id="sidebar-menu" class="sidebar-menu">
+                    <ul>
+                        <li class="active">
+                            <a href="index.html"><i class="fa fa-dashboard"></i> <span>Inicio</span></a>
+                        </li>
+                        
+                        <li class="submenu">
+							<a href="#"><i class="fa fa-hospital-o"></i> <span> Tratamiento</span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="registrarTratamiento.html">Registrar</a></li>
+							</ul>
+						</li>
+
+                        <li class="submenu">
+							<a href="#"><i class="fa fa-calendar"></i> <span> Agendar Citas </span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="calendar.html">Calendario de Citas</a></li>
+								<li><a href="citasConfirmadas.html">Citas Confirmadas</a></li>
+							</ul>
+						</li>
+                        <li class="submenu">
+							<a href="#"><i class="fa fa-wheelchair"></i> <span> Gestion de Paciente</span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="listadoPacientes.html">Registro Expediente</a></li>
+								<li><a href="hclinico.html">Historia Clinica</a></li>
+								<li><a href="rutaTratamiento.html">Ruta de Tratamiento</a></li>
+							</ul>
+						</li>
+                        <li class="submenu">
+							<a href="#"><i class="fa fa-cube"></i> <span> Gestion de Insumos</span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="nuevoI.html">Nuevo Insumo</a></li>
+								<li><a href="nuevaC.html">Nueva Carga</a></li>
+							</ul>
+						</li>
+                        <li class="submenu">
+							<a href="#"><i class="fa fa-money"></i> <span> Honorarios</span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="ganancias.html">Ganancias</a></li>
+								<li><a href="tRealizados.html">Tratamientos Realizados</a></li>
+							</ul>
+						</li>
+                        <li class="submenu">
+							<a href="#"><i class="fa fa-cog"></i> <span> Configuracion</span> <span class="menu-arrow"></span></a>
+							<ul style="display: none;">
+								<li><a href="configuracion.html">Gestion de Usuario</a></li>
+								
+                                <li class="submenu">
+                                    <a href="#"></i> <span> Mantenimiento</span> <span class="menu-arrow"></span></a>
+                                    <ul style="display: none;">
+                                        <li><a href="bitacora.html">Bitacora</a></li>
+                                        <li><a href="blank-page.html">Respaldo BD</a></li>
+                                    </ul>
+                                </li>
+							</ul>
+						</li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-wrapper">
+            <div class="content" style="margin-left: 2.1rem!important;">
+                <div class="row">
+                    <div class="col-sm-8 col-6">
+                        <h4 class="page-title" id="inicio">Historial Clinico</h4>
+                    </div>
+                    <!-- BOTON MODAL -->
+                <div  class="col-sm-12 col-md-12 text-right m-b-20">
+                    <button id="openModal" class="btn btn-primary float-right btn-rounded btn-press"><i class="fa fa-plus"></i> Añadir Tratamiento</button>
+                   
+                </div>
+             <!--/BOTON MODAL -->
+                    
+             
+                </div>
+                <div class="row filter-row">
+                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-2 col-12">
+                        <div class="form-group form-focus">
+                            <label class="focus-label">Rut</label>
+                            <input type="text" class="form-control floating">
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                        <a href="#" class="btn btn-success " style="width: 15rem!important; height: .7rem!important; border-radius: 3rem;"> Buscar Paciente </a>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive">
+                            <table class="table table-striped custom-table mb-0 datatable">
+                                <thead>
+                                    <tr>
+                                        <th>Rut</th>
+                                        <th>Nombre</th>
+                                        <th>Apellido</th>
+                                        <th>Edad</th>
+                                        <th class="text-center">Status</th>
+                                        <th class="text-right">Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        
+                                        <td>000123</td>
+                                        <td>Francisco</td>
+                                        <td>Jimenez</td>
+                                        <td>35</td>
+                                        <td class="text-center">
+                                            <div class="dropdown action-label">
+                                                <a class="custom-badge status-purple dropdown-toggle" href="#" data-toggle="dropdown" aria-expanded="false">
+                                                    New
+                                                </a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="#">New</a>
+                                                    <a class="dropdown-item" href="#">Pending</a>
+                                                    <a class="dropdown-item" href="#">Approved</a>
+                                                    <a class="dropdown-item" href="#">Declined</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="text-right">
+                                            <div class="dropdown dropdown-action">
+                                                <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a class="dropdown-item" href="edit-leave.html"><i class="fa fa-pencil m-r-5"></i> Edit</a>
+                                                    <a class="dropdown-item" href="#" title="Decline" data-toggle="modal" data-target="#delete_approve"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="notification-box">
+                <div class="msg-sidebar notifications msg-noti">
+                    <div class="topnav-dropdown-header">
+                        <span>Messages</span>
+                    </div>
+                    <div class="drop-scroll msg-list-scroll" id="msg_list">
+                        <ul class="list-box">
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">R</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author">Richard Miles </span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item new-message">
+                                        <div class="list-left">
+                                            <span class="avatar">J</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author">John Doe</span>
+                                            <span class="message-time">1 Aug</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">T</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author"> Tarah Shropshire </span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">M</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author">Mike Litorus</span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">C</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author"> Catherine Manseau </span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">D</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author"> Domenic Houston </span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">B</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author"> Buster Wigton </span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">R</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author"> Rolland Webber </span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">C</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author"> Claire Mapes </span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">M</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author">Melita Faucher</span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">J</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author">Jeffery Lalor</span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">L</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author">Loren Gatlin</span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="chat.html">
+                                    <div class="list-item">
+                                        <div class="list-left">
+                                            <span class="avatar">T</span>
+                                        </div>
+                                        <div class="list-body">
+                                            <span class="message-author">Tarah Shropshire</span>
+                                            <span class="message-time">12:28 AM</span>
+                                            <div class="clearfix"></div>
+                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="topnav-dropdown-footer">
+                        <a href="chat.html">See all messages</a>
+                    </div>
+                </div>
+            </div>
+            <table class="table table-striped custom-table" style="margin-left: 4rem!important; ">
+                <thead>
+                    <tr>
+                        <th> Condición </th>
+                        <th>  </th>
+                        <th> Descripción </th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alergia Penicilina</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="alergia" disabled  class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="alergia" disabled  class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text"  disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Alergia a Medicamento</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="Medicamento class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="Medicamento class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text"  disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Tratamiento Medico Actual</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="tratamientoActual" class="form-check-input">Si esta bajo tratamiento
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="tratamientoActual" class="form-check-input">No Esta bajo tratamiento
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text"  disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Está en Estado Gravidez</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" disabled  name="gravidez" class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" disabled  name="gravidez" class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text" disabled  style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Ha sufrido Hemorragias</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="hemorragias" class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="hemorragias" class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text"  disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Sufre de Desmayos</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="desmayos" class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="desmayos" class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text"  disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Sufre de Asma</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="asma" class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="asma" disabled  class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text"  disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Sufre Diábetes</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="diabetes"  disabled class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="diabetes" disabled  class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique Tipo"type="text"  disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Presion Arterial Alta</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="presionArterial" class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio"  disabled name="presionArterial" class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text"  disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Epilepsia</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="epilepsia" disabled  class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="epilepsia" disabled  class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text"  disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Ha Padecido Cancer en el pasado</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="cancer"  disabled class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="cancer" disabled  class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text"  disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Padece Cancer Actualmente</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="cancer-2"  disabled class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="cancer-2"  disabled class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text" disabled  style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Padece SIDA</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="sida" disabled  class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="sida" disabled  class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text" disabled  style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Padece Enfermedad Inmunodeficiente</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="idh"  disabled class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="idh"  disabled class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text" disabled  style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td>Fuma Actualmente</td>
+                        <td>
+                            <div class="form-group gender-select">
+                                <label class="gen-label"></label>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="fumador" disabled class="form-check-input">Si
+                                    </label>
+                                </div>
+                                <br>
+                                <div class="form-check-inline">
+                                    <label class="form-check-label">
+                                        <input type="radio" name="fumador" disabled  class="form-check-input">No
+                                    </label>
+                                </div>
+                        </td>
+                        <td><input placeholder="Indique"type="text"   disabled style="border-style: hidden; text-align: center;"></td>
+                        
+                        
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <!-- MODAL -->
+        <div id="modal-tratamiento" class="modal-container" style="height: 100vh!important; overflow: auto; justify-content: center!important;">
+            <div class="modal-content ">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2" style="text-align: center; margin: 0px!important;" >
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                
+                                    <h1  >Tratamientos</h1>
+                                    <h3 style="width:max-content; justify-content:center !important;display: flex !important;;">Seleccione la Pieza</h3>
+                                
+                            </div>
+                                   
+                        </div>
+                        <div class="contenedor-dentadura" id="dentadura-completa">
+                            <div class="row" style="min-height: 100%!important;">
+                                 <!-- Maxilar superior izq -->
+                                <img class="dentadura" src="assets/img/boca/dentadura.png" alt="">
+                                <a id="p11"  title="Pieza 11" ><img class="p11 pieza" src="assets/img/boca/piezas/11pieza.png" alt=""></a>
+                                <a id="p12" title="Pieza 12"><img class="p12 pieza" src="assets/img/boca/piezas/12pieza.png" alt=""></a>
+                                <a id="p13" title="Pieza 13"><img class="p13 pieza" src="assets/img/boca/piezas/13pieza.png" alt=""></a>
+                                <a id="p14" title="Pieza 14"><img class="p14 pieza" src="assets/img/boca/piezas/14pieza.png" alt=""></a>
+                                <a id="p15" title="Pieza 15"><img class="p15 pieza" src="assets/img/boca/piezas/15pieza.png" alt=""></a>
+                                <a id="p16" title="Pieza 16"><img class="p16 pieza" src="assets/img/boca/piezas/16pieza.png" alt=""></a>
+                                <a id="p17" title="Pieza 17"><img class="p17 pieza" src="assets/img/boca/piezas/17pieza.png" alt=""></a>
+                                <a id="p18" title="Pieza 18"><img class="p18 pieza" src="assets/img/boca/piezas/18pieza.png" alt=""></a>
+                                
+                                <!-- Maxilar superior derecho -->
+                                <a id="p21" title="Pieza 21"><img class="p21 pieza" src="assets/img/boca/piezas/21pieza.png" alt=""></a>
+                                <a id="p22" title="Pieza 22"><img class="p22 pieza" src="assets/img/boca/piezas/22pieza.png" alt=""></a>
+                                <a id="p23" title="Pieza 23"><img class="p23 pieza" src="assets/img/boca/piezas/23pieza.png" alt=""></a>
+                                <a id="p24" title="Pieza 24"><img class="p24 pieza" src="assets/img/boca/piezas/24pieza.png" alt=""></a>
+                                <a id="p25" title="Pieza 25"><img class="p25 pieza" src="assets/img/boca/piezas/25pieza.png" alt=""></a>
+                                <a id="p26" title="Pieza 26"><img class="p26 pieza" src="assets/img/boca/piezas/26pieza.png" alt=""></a>
+                                <a id="p27" title="Pieza 27"><img class="p27 pieza" src="assets/img/boca/piezas/27pieza.png" alt=""></a>
+                                <a id="p28" title="Pieza 28"><img class="p28 pieza" src="assets/img/boca/piezas/28pieza.png" alt=""></a>  
+                               <!-- Maxilar inferior izq -->
+                    
+                               <a id="p41" title="Pieza 41"><img class="p41 pieza-2" src="assets/img/boca/piezas/41pieza.png" alt=""></a>
+                               <a id="p42" title="Pieza 42"><img class="p42 pieza-2" src="assets/img/boca/piezas/42pieza.png" alt=""></a>
+                               <a id="p43" title="Pieza 43"><img class="p43 pieza-2" src="assets/img/boca/piezas/43pieza.png" alt=""></a>
+                               <a id="p45" title="Pieza 45"><img class="p45 pieza-2" src="assets/img/boca/piezas/45pieza.png" alt=""></a>
+                               <a id="p44" title="Pieza 44"><img class="p44 pieza-2" src="assets/img/boca/piezas/44pieza.png" alt=""></a>
+                               <a id="p46" title="Pieza 46"><img class="p46 pieza-2" src="assets/img/boca/piezas/46pieza.png" alt=""></a>
+                               <a id="p47" title="Pieza 48"><img class="p48 pieza-2" src="assets/img/boca/piezas/48pieza.png" alt=""></a>
+                               <a id="p48" title="Pieza 47"><img class="p47 pieza-2" src="assets/img/boca/piezas/47pieza.png" alt=""></a>
+                              
+                               <!-- Maxilar inferior derecho -->
+                               <a id="p31" title="Pieza 31"><img class="p31 pieza-2" src="assets/img/boca/piezas/31pieza.png" alt=""></a>
+                               <a id="p32" title="Pieza 32"><img class="p32 pieza-2" src="assets/img/boca/piezas/32pieza.png" alt=""></a>
+                               <a id="p33" title="Pieza 33"><img class="p33 pieza-2" src="assets/img/boca/piezas/33pieza.png" alt=""></a>
+                               <a id="p34" title="Pieza 34"><img class="p34 pieza-2" src="assets/img/boca/piezas/34pieza.png" alt=""></a>
+                               <a id="p35" title="Pieza 35"><img class="p35 pieza-2" src="assets/img/boca/piezas/35pieza.png" alt=""></a>
+                               
+                               <a id="p37" title="Pieza 37"><img class="p37 pieza-2" src="assets/img/boca/piezas/37pieza.png" alt=""></a>
+                               <a id="p36" title="Pieza 36"><img class="p36 pieza-2" src="assets/img/boca/piezas/36pieza.png" alt=""></a>
+                               <a id="p38" title="Pieza 38"><img class="p38 pieza-2" src="assets/img/boca/piezas/38pieza.png" alt=""></a>
+                              
+                    
+                               
+                            </div>
+                            <div class="col-lg-8 offset-lg-2">  
+                                <div class="m-t-20 text-center">
+                                    <button id="close-btn" class="btn btn-primary submit-btn"><a href=#inicio style="list-style: none; color: aliceblue;">Guardar</a></button>
+                                </div>
+                        </div> 
+                        </div>
+                        
+                </div>
+            </div>
+           
+                    <div class="notification-box">
+                         <div class="msg-sidebar notifications msg-noti">
+                             <div class="topnav-dropdown-header">
+                                <span>Messages</span>
+                             </div>
+                                <div class="drop-scroll msg-list-scroll" id="msg_list">
+                                    <ul class="list-box">
+                                        <li>
+                                            <a href="chat.html">
+                                                <div class="list-item">
+                                                    <div class="list-left">
+                                                        <span class="avatar">R</span>
+                                                    </div>
+                                                    <div class="list-body">
+                                                        <span class="message-author">Richard Miles </span>
+                                                        <span class="message-time">12:28 AM</span>
+                                                        <div class="clearfix"></div>
+                                                        <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item new-message">
+                                                        <div class="list-left">
+                                                            <span class="avatar">J</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">John Doe</span>
+                                                            <span class="message-time">1 Aug</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">T</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Tarah Shropshire </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">M</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">Mike Litorus</span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">C</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Catherine Manseau </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">D</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Domenic Houston </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">B</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Buster Wigton </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">R</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Rolland Webber </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">C</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Claire Mapes </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">M</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">Melita Faucher</span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">J</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">Jeffery Lalor</span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">L</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">Loren Gatlin</span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">T</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">Tarah Shropshire</span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="topnav-dropdown-footer">
+                                        <a href="chat.html">Ver todos los mendajes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+            
+                    </div>
+        </div>
+        <!-- /MODAL -->
+
+        <!-- Modal piezas -->
+
+        <div id="modal-pieza" class="modal-container" style="height: 100vh!important; overflow: auto;">
+            <div class="modal-content " style="width: 60rem!important;">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2" style="margin: 10rem!important;;">
+                                <br>
+                                <br>
+                                
+                                                    
+                                                        
+                                                        <div class="floating" >
+                                                            <ul class="user-det-list" style="font-size: 1.5rem!important;">
+                                                                <li style="display: block;">
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                    <img src="assets/img/boca/dentadura.png" style="width: 10rem!important; margin: auto!important;" alt="">
+                                                                    <h1 class="user-name m-t-10 mb-0"> Pieza 11</h1>
+                                                                    
+
+                                                                </li>
+                                                                <li style="display: flex;">
+                                                                    
+                                                                    <button class="btn-white modal-btn" style="margin: .5rem!important; border: 0px!important;border-radius: 50px!important; background-color: rgb(205, 167, 240)!important; padding: .8rem!important;">Restauracion</button>
+                                                                    <button class="btn-white modal-btn" style="margin: .5rem!important; border: 0px!important;border-radius: 50px!important; background-color: rgb(205, 167, 240)!important; padding: .8rem!important;">Fractura</button>
+                                                                    <button class="btn-white modal-btn" style="margin: .5rem!important; border: 0px!important;border-radius: 50px!important; background-color: rgb(205, 167, 240)!important; padding: .8rem!important;">Extracción</button>
+                                                                    <button class="btn-white modal-btn" style="margin: .5rem!important; border: 0px!important;border-radius: 50px!important; background-color: rgb(205, 167, 240)!important; padding: .8rem!important;">Endodoncia</button>
+                                                                    <button class="btn-white modal-btn" style="margin: .5rem!important; border: 0px!important;border-radius: 50px!important; background-color: rgb(205, 167, 240)!important; padding: .8rem!important;">Prótesis</button>
+                                                                    
+                                                                </li>
+                                                                <li style="display: flex;">
+                                                                    
+                                                                    <div class="contenedor-odontograma"  id="odontograma">
+                                                                        <div class="row">
+                                                                            <img class="odontograma" src="assets/img/boca/piezas/1x/Recurso 10pieza.png" alt="">
+                                                                            <img src="assets/img/boca/piezas/derechapieza.png" alt="" class="parte-o parte-odontograma">
+                                                                            <img src="assets/img/boca/piezas/inferiorpieza.png" alt="" class="parte-o parte-odontograma-1">
+                                                                            <img src="assets/img/boca/piezas/izquierdapieza.png" alt="" class="parte-o parte-odontograma-2">
+                                                                            <img src="assets/img/boca/piezas/superiorpieza.png" alt="" class="parte-o parte-odontograma-3">
+                                                                            <img src="assets/img/boca/piezas/nucleopieza.png" alt="" class="parte-o parte-odontograma-4">
+                                                                           
+                                                                        </div>
+                                                                        
+                                                                    </div>
+                                                                    
+                                                                </li>
+                                                                <li style="display: flex;">
+                                                                    <textarea name="pieza-tratamiento" id="p-tratamiento" cols="40" rows="4" style="margin-left: 8rem;"></textarea>
+                                                                   
+
+                                                                </li>
+                                                                <li>
+                                                                    <button class="btn btn-primary parte-o" style="border-radius: 3rem!important; ;"  >Añadir</button> 
+                                                                </li>
+                                                                <li>
+                                                                    
+                                                        <button id="closePieza" class="btn btn-primary submit-btn"><a href=#dentadura-completa style="list-style: none; color: aliceblue;">Guardar</a></button>
+                                                        <br>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    
+                                                    
+                            </div>
+                            
+                            
+                        </div>
+                        
+                        
+                </div>
+            </div> -->
+           
+                    <div class="notification-box">
+                         <div class="msg-sidebar notifications msg-noti">
+                             <div class="topnav-dropdown-header">
+                                <span>Messages</span>
+                             </div>
+                                <div class="drop-scroll msg-list-scroll" id="msg_list">
+                                    <ul class="list-box">
+                                        <li>
+                                            <a href="chat.html">
+                                                <div class="list-item">
+                                                    <div class="list-left">
+                                                        <span class="avatar">R</span>
+                                                    </div>
+                                                    <div class="list-body">
+                                                        <span class="message-author">Richard Miles </span>
+                                                        <span class="message-time">12:28 AM</span>
+                                                        <div class="clearfix"></div>
+                                                        <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                    </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item new-message">
+                                                        <div class="list-left">
+                                                            <span class="avatar">J</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">John Doe</span>
+                                                            <span class="message-time">1 Aug</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">T</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Tarah Shropshire </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">M</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">Mike Litorus</span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">C</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Catherine Manseau </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">D</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Domenic Houston </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">B</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Buster Wigton </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">R</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Rolland Webber </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">C</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author"> Claire Mapes </span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">M</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">Melita Faucher</span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">J</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">Jeffery Lalor</span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">L</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">Loren Gatlin</span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="chat.html">
+                                                    <div class="list-item">
+                                                        <div class="list-left">
+                                                            <span class="avatar">T</span>
+                                                        </div>
+                                                        <div class="list-body">
+                                                            <span class="message-author">Tarah Shropshire</span>
+                                                            <span class="message-time">12:28 AM</span>
+                                                            <div class="clearfix"></div>
+                                                            <span class="message-content">Lorem ipsum dolor sit amet, consectetur adipiscing</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="topnav-dropdown-footer">
+                                        <a href="chat.html">Ver todos los mendajes</a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        
+            
+                    </div>
+
+
+
+
+        <!-- Modal piezas -->
+		<div id="delete_approve" class="modal fade delete-modal" role="dialog">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-body text-center">
+						<img src="assets/img/sent.png" alt="" width="50" height="46">
+						<h3>Are you sure want to delete this Leave Request?</h3>
+						<div class="m-t-20"> <a href="#" class="btn btn-white" data-dismiss="modal">Close</a>
+							<button type="submit" class="btn btn-danger">Delete</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="sidebar-overlay" data-reff=""></div>
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/select2.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/modal.js"></script>
+</body>
+
+
+<!-- leaves23:23-->
+</html>
